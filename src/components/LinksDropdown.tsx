@@ -139,8 +139,11 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
           <DropdownLink href="/settings" icon={Icons.SETTINGS}>
             {t("navigation.menu.settings")}
           </DropdownLink>
-          <DropdownLink href="/about" icon={Icons.CIRCLE_QUESTION}>
-            {t("navigation.menu.about")}
+          <DropdownLink
+            href="https://themoviedb.org/"
+            icon={Icons.CIRCLE_QUESTION}
+          >
+            {t("navigation.menu.tmdb")}
           </DropdownLink>
           <DropdownLink href="/discover" icon={Icons.RISING_STAR}>
             {t("navigation.menu.discover")}
@@ -161,11 +164,7 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
               icon={Icons.DISCORD}
             />
             <CircleDropdownLink href={conf().GITHUB_LINK} icon={Icons.GITHUB} />
-            <CircleDropdownLink
-              href={conf().TWITTER_LINK}
-              icon={Icons.TWITTER}
-            />
-            <CircleDropdownLink href="/support" icon={Icons.MAIL} />
+            <CircleDropdownLink href="/about" icon={Icons.CIRCLE_QUESTION} />
           </div>
         </div>
       </Transition>

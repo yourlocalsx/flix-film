@@ -1,13 +1,13 @@
 {
   "about": {
-    "description": "sudo-flix is a fork of movie-web that is ensured to stay up even after the shutdown of movie-web.app. sudo-flix.lol runs on a private, self-hosted VPS. I run this site at a loss; there are no ads due to my beliefs in free media.",
+    "description": "flix-film is a web application that searches the internet for streams and strives for a minimalist approach to consuming content. flix-film tries to be as easy to use as possible.",
     "faqTitle": "Common questions",
     "q1": {
-      "body": "sudo-flix does not host any content. When you click on something to watch, the internet is searched for the selected media (On the loading screen and in the 'video sources' tab you can see which source you're using). Media never gets uploaded by sudo-flix, everything is through this searching mechanism.",
+      "body": "flix-film does not host any content. When you click on something to watch, the internet is searched for the selected media (On the loading screen and in the 'video sources' tab you can see which source you're using). Media never gets uploaded by flix-film, everything is through this searching mechanism.",
       "title": "Where does the content come from?"
     },
     "q2": {
-      "body": "It's not possible to request a show or movie, sudo-flix does not manage any content. All content is viewed through sources on the internet.",
+      "body": "It's not possible to request a show or movie, flix-film does not manage any content. All content is viewed through sources on the internet.",
       "title": "Where can I request a show or movie?"
     },
     "q3": {
@@ -19,10 +19,10 @@
       "title": "What about my data and stuff?"
     },
     "q5": {
-      "body": "Well sudo-flix has a twitter account that can be found in the footer of this page as well as a link to the source code on Github.",
+      "body": "Well flix-film has a twitter account that can be found in the footer of this page as well as a link to the source code on Github.",
       "title": "How can I find out more?"
     },
-    "title": "About sudo-flix (^▽^)"
+    "title": "About flix-film (^▽^)"
   },
   "actions": {
     "copied": "Copied",
@@ -73,7 +73,7 @@
     "verify": {
       "description": "Please enter your passphrase from earlier to confirm you have saved it and to create your account",
       "invalidData": "Data is not valid",
-      "noMatch": "Passphrase doesn't match 😭",
+      "noMatch": "Passphrase doesn't match silly 😂",
       "passphraseLabel": "Your 12-word passphrase",
       "recaptchaFailed": "ReCaptcha validation failed",
       "register": "Create account",
@@ -90,7 +90,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Disclaimer ◝(ᵔᵕᵔ)◜",
-      "disclaimerText": "Please note: sudo-flix does not host any files itself but instead only display's content from 3rd party providers. Legal issues should be taken up with them."
+      "disclaimerText": "flix-film does not host any files itself but instead only display's content from 3rd party providers. Legal issues should be taken up with them."
     },
     "links": {
       "discord": "Discord",
@@ -101,7 +101,7 @@
     "tagline": "Watch your favorite shows and movies for free with no ads ever! (っ'ヮ'c)"
   },
   "global": {
-    "name": "sudo-flix",
+    "name": "flix-film",
     "pages": {
       "about": "About",
       "dmca": "DMCA",
@@ -109,7 +109,7 @@
       "support": "Support",
       "login": "Login",
       "onboarding": "Setup",
-      "pagetitle": "{{title}} - sudo-flix",
+      "pagetitle": "{{title}} - flix-film",
       "register": "Register",
       "settings": "Settings"
     }
@@ -119,7 +119,7 @@
       "sectionTitle": "Bookmarks"
     },
     "continueWatching": {
-      "sectionTitle": "Continue Watching..."
+      "sectionTitle": "Continue Watching"
     },
     "mediaList": {
       "stopEditing": "Stop editing"
@@ -135,11 +135,11 @@
           "What are you in the mood for?",
           "Should we delete your browser history?",
           "What do you want to stream?",
-          "Sudo-Flix is the best site ever!",
+          "flix-film is the best site ever!",
           "What's on your watchlist today?",
           "How was your day?",
           "My bad the site never works...",
-          "Isn't sudo-flix just the best?",
+          "Isn't flix-film just the best?",
           ">ᴗ<"
         ]
       },
@@ -154,29 +154,29 @@
       },
       "sectionTitle": "Search results",
       "discoverMore": "Discover more",
-      "discover": "Discover"
+      "discover": "Discover ✨"
     },
     "titles": {
       "day": {
         "default": "What would you like to watch this afternoon?",
         "extra": ["Have you seen Blazing Saddles?"],
-        "extra": ["Welcome to Sudo-Flix!"],
+        "extra": ["Welcome to flix-film!"],
         "extra": [" /ᐠ>ヮ<ᐟ\\ฅ"],
-        "extra": ["Viva la sudo-flix!"]
+        "extra": ["Viva la flix-film!"]
       },
       "morning": {
         "default": "What would you like to watch this morning?",
         "extra": ["Can't go wrong with Friends"],
         "extra": ["I hear The Expanse is popular"],
         "extra": ["\"૮₍  ˶•⤙•˶ ₎ა"],
-        "extra": ["Viva la sudo-flix!"]
+        "extra": ["Viva la flix-film!"]
       },
       "night": {
         "default": "What would you like to watch tonight?",
         "extra": ["Rick & Morty is great with friends!"],
         "extra": ["Go smoke and watch The Simpsons!"],
         "extra": ["(づ ᴗ _ᴗ)づ♡"],
-        "extra": ["Viva la sudo-flix!"]
+        "extra": ["Viva la flix-film!"]
       },
       "420": {
         "default": "What would you like to watch this 4/20?",
@@ -185,7 +185,7 @@
     }
   },
   "media": {
-    "episodeDisplay": "S{{season}} - E{{episode}}",
+    "episodeDisplay": "S{{season}} E{{episode}}",
     "unreleased": "Unreleased",
     "types": {
       "movie": "Movie",
@@ -197,9 +197,9 @@
       "offline": "Check your internet connection, silly goose! 🦢"
     },
     "menu": {
-      "about": "About us",
+      "tmdb": "The Movie DB",
       "logout": "Log out",
-      "register": "Sync to sudo-cloud",
+      "register": "Sync to cloud",
       "settings": "Settings",
       "support": "Support",
       "discover": "Discover"
@@ -215,7 +215,7 @@
   "downtimeNotice": {
     "badge": "Issues",
     "goHome": "Go home",
-    "message": "sudo-flix.lol is experiencing issues with some providers again, if you cant find or play a show please change the source. Expect this error to persist throughout the below times.",
+    "message": "flix-film is experiencing issues with some providers again, if you cant find or play a show please change the source. Expect this error to persist throughout the below times.",
     "timeFrame": "<bold>March 31th 11:00 PM - 5:00 AM EST</bold>",
     "title": "Provider issues"
   },
@@ -279,7 +279,7 @@
           "title": "Custom proxy"
         }
       },
-      "title": "Let's get you setup with sudo-flix 🥳"
+      "title": "Let's get you setup with flix-film 🥳"
     }
   },
   "overlays": {
@@ -295,11 +295,11 @@
     },
     "menus": {
       "downloads": {
-        "disclaimer": "Downloads are taken directly from the provider. sudo-flix does not have control over how the downloads are provided.",
+        "disclaimer": "Downloads are taken directly from the provider. flix-film does not have control over how the downloads are provided.",
         "copyHlsPlaylist": "Copy HLS playlist link",
         "downloadSubtitle": "Download current subtitle",
         "downloadVideo": "Download video",
-        "hlsDisclaimer": "Downloads are taken directly from the provider. sudo-flix does not have control over how the downloads are provided.<br /><br />Please note you are downloading an HLS playlist, <bold>it is not recommended to download if you are not familiar with advanced streaming formats</bold>. Try different sources for different formats.",
+        "hlsDisclaimer": "Downloads are taken directly from the provider. flix-film does not have control over how the downloads are provided.<br /><br />Please note you are downloading an HLS playlist, <bold>it is not recommended to download if you are not familiar with advanced streaming formats</bold>. Try different sources for different formats.",
         "onAndroid": {
           "1": "To download on Android, click the download button then, on the new page, <bold>tap and hold</bold> on the video, then select <bold>save</bold>.",
           "shortTitle": "Download / Android",
@@ -368,7 +368,6 @@
         "customChoice": "Drop or upload file",
         "customizeLabel": "Customize",
         "offChoice": "Off",
-        "OpenSubtitlesChoice": "OpenSubtitles",
         "settings": {
           "backlink": "Custom subtitles",
           "delay": "Subtitle delay",
@@ -376,9 +375,7 @@
         },
         "title": "Subtitles",
         "unknownLanguage": "Unknown",
-        "dropSubtitleFile": "Drop subtitle file here! >_<",
-        "scrapeButton": "Scrape subtitles",
-        "empty": "There are no provided subtitles for this."
+        "dropSubtitleFile": "Drop subtitle file here! >_<"
       }
     },
     "metadata": {
@@ -447,7 +444,7 @@
         "homeButton": "Go home",
         "enableExtension": "Enable extension",
         "title": "Please enable the extension",
-        "text": "You've installed the sudo-flix extension. To start using it, you need to enable the extension for this site."
+        "text": "You've installed the flix-film extension. To start using it, you need to enable the extension for this site."
       }
     },
     "time": {
@@ -457,7 +454,7 @@
       "shortRemaining": "-{{timeLeft}}"
     },
     "turnstile": {
-      "description": "Please prove your humanity by completing the Captcha on the right. This is to keep sudo-flix.lol safe!",
+      "description": "Please prove your humanity by completing the Captcha on the right. This is to keep flix-film safe!",
       "error": "Failed to verify your humanity! Please try again.",
       "title": "Are You a Robot 🤖?",
       "verifyingHumanity": "Verifying your humanity... (^▽^)👍"
@@ -465,9 +462,9 @@
   },
   "support": {
     "title": "Support",
-    "text": "sudo-flix is designed to be as user-friendly as possible. However, people still have questions and issues. This page is here to help resolve these shortcomings",
+    "text": "flix-film is designed to be as user-friendly as possible. However, people still have questions and issues. This page is here to help resolve these shortcomings",
     "q1": {
-      "body": "Well, you can join the official <0>sudo-flix discord</0> and ask questions there or you can email the one provided at the bottom of this page.",
+      "body": "Well, you can join the official <0>flix-film discord</0> and ask questions there or you can email the one provided at the bottom of this page.",
       "title": "Where can I get help?"
     },
     "q2": {
@@ -477,7 +474,7 @@
   },
   "screens": {
     "dmca": {
-      "text": "Welcome to sudo-flix's DMCA contact page. If you believe your copyrighted work has been improperly used on our platform (😢), please send a detailed DMCA notice to: <bold>{{dmca}}</bold> below. Please include a description of the copyrighted material, your contact details, and a statement of good faith belief. We're committed to resolving these matters promptly and appreciate your cooperation.",
+      "text": "Welcome to flix-film's DMCA contact page. If you believe your copyrighted work has been improperly used on our platform (😢), please send a detailed DMCA notice to: <bold>support@flix-film.fun</bold> below. Please include a description of the copyrighted material, your contact details, and a statement of good faith belief. We're committed to resolving these matters promptly and appreciate your cooperation.",
       "title": "DMCA :("
     },
     "loadingApp": "Loading application",
@@ -504,7 +501,7 @@
       },
       "admin": {
         "title": "Admin panel",
-        "text": "Utilize tools made for testing sudo-flix's condition.",
+        "text": "Utilize tools made for testing flix-film's condition.",
         "button": "Check it out"
       },
       "actions": {
@@ -620,10 +617,9 @@
       "backgroundLabel": "Background opacity",
       "backgroundBlurLabel": "Background blur",
       "colorLabel": "Color",
-      "previewQuote": "Would you rather have a thot daughter or a gay son? 🤔",
+      "previewQuote": "Can I maybe have a photo of the front and back of your credit card? 👉👈🥺",
       "textSizeLabel": "Text size",
-      "title": "Subtitles",
-      "textBoldLabel": "Bold text"
+      "title": "Subtitles"
     },
     "unsaved": "You have unsaved changes... ฅ^•ﻌ•^ฅ"
   }
