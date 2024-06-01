@@ -55,7 +55,7 @@ const env: Record<keyof Config, undefined | string> = {
   ONBOARDING_CHROME_EXTENSION_INSTALL_LINK:
     "https://chromewebstore.google.com/detail/nbcjlcokgigjfhejofmbaomcimggiafn",
   ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK:
-    "https://addons.mozilla.org/firefox/addon/movie-web-extension/",
+    "https://addons.mozilla.org/firefox/addon/flix-film/",
   ONBOARDING_PROXY_INSTALL_LINK: import.meta.env
     .VITE_ONBOARDING_PROXY_INSTALL_LINK,
   DMCA_EMAIL: import.meta.env.VITE_DMCA_EMAIL,
