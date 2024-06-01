@@ -132,15 +132,7 @@
       "placeholder": {
         "default": "What do you want to watch?",
         "extra": [
-          "What are you in the mood for?",
-          "Should we delete your browser history?",
-          "What do you want to stream?",
-          "flix-film is the best site ever!",
-          "What's on your watchlist today?",
-          "How was your day?",
-          "My bad the site never works...",
-          "Isn't flix-film just the best?",
-          ">ᴗ<"
+          "Happy Pride Month! 🏳️‍🌈"
         ]
       },
       "empty": {
@@ -159,15 +151,24 @@
     "titles": {
       "day": {
         "default": "What would you like to watch this afternoon?",
-        "extra": ["Happy Pride Month! 🏳️‍🌈"]
+        "extra": ["Have you seen Blazing Saddles?"],
+        "extra": ["Welcome to flix-film!"],
+        "extra": [" /ᐠ>ヮ<ᐟ\\ฅ"],
+        "extra": ["Viva la flix-film!"]
       },
       "morning": {
         "default": "What would you like to watch this morning?",
-        "extra": ["Happy Pride Month! 🏳️‍🌈"]
+        "extra": ["Can't go wrong with Friends"],
+        "extra": ["I hear The Expanse is popular"],
+        "extra": ["\"૮₍  ˶•⤙•˶ ₎ა"],
+        "extra": ["Viva la flix-film!"]
       },
       "night": {
         "default": "What would you like to watch tonight?",
-        "extra": ["Happy Pride Month! 🏳️‍🌈"]
+        "extra": ["Rick & Morty is great with friends!"],
+        "extra": ["Go smoke and watch The Simpsons!"],
+        "extra": ["(づ ᴗ _ᴗ)づ♡"],
+        "extra": ["Viva la flix-film!"]
       },
       "420": {
         "default": "What would you like to watch this 4/20?",
