@@ -467,8 +467,8 @@
   },
   "screens": {
     "dmca": {
-      "text": "Welcome to flix-film's DMCA contact page. If you believe your copyrighted work has been improperly used on our platform (😢), please send a detailed DMCA notice to: <bold>support@flix-film.fun</bold> below. Please include a description of the copyrighted material, your contact details, and a statement of good faith belief. We're committed to resolving these matters promptly and appreciate your cooperation.",
-      "title": "DMCA :("
+      "text": "Welcome to the DMCA contact page of flix-film! We respect intellectual property rights and aim to address any copyright issues promptly. If you believe your copyrighted work has been improperly used on our platform, please send a detailed DMCA notice to the email address below. Include a description of the copyrighted material, your contact information, and a statement that you are acting in good faith. We are committed to resolving these matters quickly and appreciate your cooperation in maintaining flix-film as a place where creativity and copyright are respected.",
+      "title": "DMCA"
     },
     "loadingApp": "Loading application",
     "loadingUser": "Loading your profile",
