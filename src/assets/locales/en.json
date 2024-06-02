@@ -612,7 +612,8 @@
       "colorLabel": "Color",
       "previewQuote": "Can I maybe have a photo of the front and back of your credit card? 👉👈🥺",
       "textSizeLabel": "Text size",
-      "title": "Subtitles"
+      "title": "Subtitles",
+      "textBoldLabel": "Bold text"
     },
     "unsaved": "You have unsaved changes... ฅ^•ﻌ•^ฅ"
   }
