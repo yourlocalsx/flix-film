@@ -2,18 +2,18 @@ import {
   APP_VERSION,
   BACKEND_URL,
   DISCORD_LINK,
+  DONATE_LINK,
   GITHUB_LINK,
   TWITTER_LINK,
-  DONATE_LINK,
 } from "./constants";
 
 interface Config {
   APP_VERSION: string;
   GITHUB_LINK: string;
   DISCORD_LINK: string;
+  DONATE_LINK: string;
   DMCA_EMAIL: string;
   TWITTER_LINK: string;
-  DONATE_LINK: string;
   TMDB_READ_API_KEY: string;
   CORS_PROXY_URL: string;
   NORMAL_ROUTER: boolean;
@@ -32,9 +32,9 @@ export interface RuntimeConfig {
   APP_VERSION: string;
   GITHUB_LINK: string;
   DISCORD_LINK: string;
+  DONATE_LINK: string;
   DMCA_EMAIL: string | null;
   TWITTER_LINK: string;
-  DONATE_LINK: string;
   TMDB_READ_API_KEY: string | null;
   NORMAL_ROUTER: boolean;
   PROXY_URLS: string[];
@@ -54,8 +54,8 @@ const env: Record<keyof Config, undefined | string> = {
   APP_VERSION: undefined,
   GITHUB_LINK: undefined,
   DISCORD_LINK: undefined,
-  TWITTER_LINK: undefined,
   DONATE_LINK: undefined,
+  TWITTER_LINK: undefined,
   ONBOARDING_CHROME_EXTENSION_INSTALL_LINK:
     "https://chromewebstore.google.com/detail/nbcjlcokgigjfhejofmbaomcimggiafn",
   ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK:
@@ -97,8 +97,8 @@ export function conf(): RuntimeConfig {
     APP_VERSION,
     GITHUB_LINK,
     DISCORD_LINK,
-    TWITTER_LINK,
     DONATE_LINK,
+    TWITTER_LINK,
     DMCA_EMAIL: getKey("DMCA_EMAIL"),
     ONBOARDING_CHROME_EXTENSION_INSTALL_LINK: getKey(
       "ONBOARDING_CHROME_EXTENSION_INSTALL_LINK",
