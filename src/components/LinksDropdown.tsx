@@ -139,7 +139,8 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
           <DropdownLink href="/settings" icon={Icons.SETTINGS}>
             {t("navigation.menu.settings")}
           </DropdownLink>
-          <DropdownLink href={conf().DONATE_LINK} icon={Icons.DONATE}>{t("navigation.menu.donate")}
+          <DropdownLink href={conf().DONATE_LINK} icon={Icons.DONATE}
+          >{t("navigation.menu.donate")}
           </DropdownLink>
           <DropdownLink href="/discover" icon={Icons.RISING_STAR}>
             {t("navigation.menu.discover")}
