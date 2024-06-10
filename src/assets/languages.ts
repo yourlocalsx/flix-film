@@ -1,5 +1,5 @@
 import lan from "@/assets/locales/lan.json";
-import en from "@/assets/locales/lan.json";
+import en from "@/assets/locales/en.json";
 
 export const locales = {
   lan,
