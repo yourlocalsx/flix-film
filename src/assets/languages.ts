@@ -19,10 +19,10 @@ import hi from "@/assets/locales/hi.json";
 import id from "@/assets/locales/id.json";
 import is from "@/assets/locales/is-IS.json";
 import it from "@/assets/locales/it.json";
-import lan from "@/assets/locales/lan.json";
 import ja from "@/assets/locales/ja.json";
 import kitty from "@/assets/locales/kitty.json";
 import ko from "@/assets/locales/ko.json";
+import lan from "@/assets/locales/lan.json";
 import lv from "@/assets/locales/lv.json";
 import minion from "@/assets/locales/minion.json";
 import ne from "@/assets/locales/ne.json";
@@ -55,7 +55,6 @@ export const locales = {
   de,
   fr,
   it,
-  lan,
   nl,
   pl,
   tr,
@@ -86,6 +85,7 @@ export const locales = {
   id,
   ja,
   ko,
+  lan,
   sl,
   ta,
   "zh-Hant": zhhant,
