@@ -1,0 +1,10 @@
+{
+  "about": {
+    "description": "flix-film is a web application that searches the internet for streams and strives for a minimalist approach to consuming content. flix-film tries to be as easy to use as possible.",
+    "faqTitle": "Common questions",
+    "q1": {
+      "body": "flix-film does not host any content. When you click on something to watch, the internet is searched for the selected media (On the loading screen and in the 'video sources' tab you can see which source you're using). Media never gets uploaded by flix-film, everything is through this searching mechanism.",
+      "title": "Where does the content come from?"
+    }
+  }
+}
