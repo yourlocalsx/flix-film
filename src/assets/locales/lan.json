@@ -1,10 +1,385 @@
 {
-  "about": {
-    "description": "flix-film is a web application that searches the internet for streams and strives for a minimalist approach to consuming content. flix-film tries to be as easy to use as possible.",
-    "faqTitle": "Common questions",
-    "q1": {
-      "body": "flix-film does not host any content. When you click on something to watch, the internet is searched for the selected media (On the loading screen and in the 'video sources' tab you can see which source you're using). Media never gets uploaded by flix-film, everything is through this searching mechanism.",
-      "title": "Where does the content come from?"
-    }
-  }
-} 
+	"about": {
+		"description": "",
+		"faqTitle": "",
+		"q1": {
+			"body": "",
+			"title": ""
+		},
+		"q2": {
+			"body": "",
+			"title": ""
+		},
+		"q3": {
+			"body": "",
+			"title": ""
+		},
+		"q4": {
+			"body": "",
+			"title": ""
+		},
+		"q5": {
+			"body": "",
+			"title": ""
+		},
+		"title": ""
+	},
+	"actions": {
+		"copied": "",
+		"copy": ""
+	},
+	"auth": {
+		"createAccount": "",
+		"deviceNameLabel": "",
+		"deviceNamePlaceholder": "",
+		"generate": {
+			"description": "",
+			"next": "",
+			"passphraseFrameLabel": "",
+			"title": ""
+		},
+		"hasAccount": "",
+		"login": {
+			"description": "",
+			"deviceLengthError": "",
+			"passphraseLabel": "",
+			"passphrasePlaceholder": "",
+			"submit": "",
+			"title": "",
+			"validationError": ""
+		},
+		"register": {
+			"information": {
+				"color1": "",
+				"color2": "",
+				"header": "",
+				"icon": "",
+				"next": "",
+				"title": ""
+			}
+		},
+		"trust": {
+			"failed": {
+				"text": "",
+				"title": ""
+			},
+			"noHostTitle": "",
+			"noHost": "",
+			"host": "",
+			"no": "",
+			"title": "",
+			"yes": ""
+		},
+		"verify": {
+			"description": "",
+			"invalidData": "",
+			"noMatch": "",
+			"passphraseLabel": "",
+			"recaptchaFailed": "",
+			"register": "",
+			"title": ""
+		}
+	},
+	"errors": {
+		"badge": "",
+		"details": "",
+		"reloadPage": "",
+		"showError": "",
+		"title": ""
+	},
+	"footer": {
+		"legal": {
+			"disclaimer": "",
+			"disclaimerText": ""
+		},
+		"links": {
+			"discord": "",
+			"dmca": "",
+			"github": "",
+			"twitter": ""
+		},
+		"tagline": ""
+	},
+	"global": {
+		"name": "",
+		"pages": {
+			"about": "",
+			"dmca": "",
+			"discover": "",
+			"support": "",
+			"login": "",
+			"onboarding": "",
+			"pagetitle": "",
+			"register": "",
+			"settings": ""
+		}
+	},
+	"home": {
+		"bookmarks": {
+			"sectionTitle": ""
+		},
+		"continueWatching": {
+			"sectionTitle": ""
+		},
+		"mediaList": {
+			"stopEditing": ""
+		},
+		"search": {
+			"allResults": "",
+			"failed": "",
+			"loading": "",
+			"noResults": "",
+			"placeholder": {
+				"default": "",
+				"extra": [
+					""
+				]
+			},
+			"empty": {
+				"default": "",
+				"extra": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"sectionTitle": "",
+			"discoverMore": "",
+			"discover": ""
+		},
+		"titles": {
+			"day": {
+				"default": "",
+				"extra": [""],
+				"extra": [""],
+				"extra": [""],
+				"extra": [""]
+			},
+			"morning": {
+				"default": "",
+				"extra": [""],
+				"extra": [""],
+				"extra": [""],
+				"extra": [""]
+			},
+			"night": {
+				"default": "",
+				"extra": [""],
+				"extra": [""],
+				"extra": [""],
+				"extra": [""]
+			},
+			"420": {
+				"default": "",
+				"extra": [""]
+			}
+		}
+	},
+	"media": {
+		"episodeDisplay": "",
+		"unreleased": "",
+		"types": {
+			"movie": "",
+			"show": ""
+		}
+	},
+	"navigation": {
+		"banner": {
+			"offline": ""
+		},
+		"menu": {
+			"donate": "",
+			"logout": "",
+			"register": "",
+			"settings": "",
+			"support": "",
+			"discover": ""
+		}
+	},
+	"notFound": {
+		"badge": "",
+		"goHome": "",
+		"reloadButton": "",
+		"message": "",
+		"title": ""
+	},
+	"downtimeNotice": {
+		"badge": "",
+		"goHome": "",
+		"message": "",
+		"timeFrame": "",
+		"title": ""
+	},
+	"onboarding": {
+		"defaultConfirm": {
+			"cancel": "",
+			"confirm": "",
+			"description": "",
+			"title": ""
+		},
+		"extension": {
+			"back": "",
+			"explainer": "",
+			"explainerIos": "",
+			"extensionHelp": "",
+			"linkChrome": "",
+			"linkFirefox": "",
+			"notDetecting": "",
+			"notDetectingAction": "",
+			"status": {
+				"disallowed": "",
+				"disallowedAction": "",
+				"failed": "",
+				"loading": "",
+				"outdated": "",
+				"success": ""
+			},
+			"submit": "",
+			"title": ""
+		},
+		"proxy": {
+			"back": "",
+			"explainer": "",
+			"input": {
+				"errorConnection": "",
+				"errorInvalidUrl": "",
+				"errorNotProxy": "",
+				"label": "",
+				"placeholder": ""
+			},
+			"link": "",
+			"submit": "",
+			"title": ""
+		},
+		"start": {
+			"explainer": "",
+			"options": {
+				"default": {
+					"text": ""
+				},
+				"extension": {
+					"action": "",
+					"description": "",
+					"quality": "",
+					"title": ""
+				},
+				"proxy": {
+					"action": "",
+					"description": "",
+					"quality": "",
+					"title": ""
+				}
+			},
+			"title": ""
+		}
+	},
+	"overlays": {
+		"close": ""
+	},
+	"player": {
+		"back": {
+			"default": "",
+			"short": ""
+		},
+		"casting": {
+			"enabled": ""
+		},
+		"menus": {
+			"downloads": {
+				"disclaimer": "",
+				"copyHlsPlaylist": "",
+				"downloadSubtitle": "",
+				"downloadVideo": "",
+				"hlsDisclaimer": "",
+				"onAndroid": {
+					"1": "",
+					"shortTitle": "",
+					"title": ""
+				},
+				"onIos": {
+					"1": "",
+					"shortTitle": "",
+					"title": ""
+				},
+				"onPc": {
+					"1": "",
+					"shortTitle": "",
+					"title": ""
+				},
+				"title": ""
+			},
+			"episodes": {
+				"button": "",
+				"emptyState": "",
+				"episodeBadge": "",
+				"loadingError": "",
+				"loadingList": "",
+				"loadingTitle": "",
+				"unairedEpisodes": "",
+				"seasons": ""
+			},
+			"playback": {
+				"speedLabel": "",
+				"title": ""
+			},
+			"quality": {
+				"automaticLabel": "",
+				"hint": "",
+				"iosNoQuality": "",
+				"title": ""
+			},
+			"settings": {
+				"downloadItem": "",
+				"enableSubtitles": "",
+				"experienceSection": "",
+				"playbackItem": "",
+				"audioItem": "",
+				"qualityItem": "",
+				"sourceItem": "",
+				"subtitleItem": "",
+				"videoSection": ""
+			},
+			"sources": {
+				"failed": {
+					"text": "",
+					"title": ""
+				},
+				"noEmbeds": {
+					"text": "",
+					"title": ""
+				},
+				"noStream": {
+					"text": "",
+					"title": ""
+				},
+				"title": "",
+				"unknownOption": ""
+			},
+			"subtitles": {
+				"customChoice": "",
+				"customizeLabel": "",
+				"offChoice": "",
+				"OpenSubtitlesChoice": "",
+				"settings": {
+					"colorLabel": "",
+					"fontLabel": "",
+					"opacityLabel": "",
+					"shadowLabel": "",
+					"sizeLabel": ""
+				},
+				"title": "",
+				"track": ""
+			}
+		},
+		"report": {
+			"button": "",
+			"hint": "",
+			"label": "",
+			"title": ""
+		},
+		"seekTooltip": {
+			"intro": ""
+		}
+	}
+}
