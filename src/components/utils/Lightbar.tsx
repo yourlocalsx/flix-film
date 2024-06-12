@@ -144,7 +144,7 @@ function ParticlesCanvas() {
     canvas.height = canvas.scrollHeight;
 
     // Basic particle config
-    const particleCount = 30;
+    const particleCount = 40;
 
     let imageOverride: { image: string; sizeRange?: [number, number] }[] = [];
     const date = new Date();
