@@ -4,48 +4,113 @@
 <!--https://www.youtube.com/watch?v=dQw4w9WgXcQ-->
 
 <head>
+
   <style>
-    .announcement-banner {
-        background-color: #9900ff;
-        color: #ffffff;
-        padding: 8px 16px; /* Adjust padding as needed */
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000; /* Ensures it's above other content */
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a shadow for depth */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 40px; /* Adjust the height to make it thinner */
-    }
-    .announcement-banner p {
+    /* General styles */
+    body {
         margin: 0;
-        flex: 1; /* Take remaining space */
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #2e2041; /* Dark purplish background color */
+        color: #fff; /* White text color */
     }
-    .close-btn {
+
+    /* Notification styles */
+    #notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 300px;
+        max-width: 100%;
+        z-index: 1000;
+        transform: scale(0); /* Initially hidden */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #notification.active {
+        transform: scale(1); /* Display with animation */
+    }
+
+    .notification-folded {
+        background-color: rgba(46, 32, 65, 0.9); /* Semi-transparent dark purplish color */
+        padding: 10px;
+        border-radius: 10px;
         cursor: pointer;
-        padding: 8px;
-        background-image: url('https://files.catbox.moe/exy95h.png'); /* Set background image */
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-left: 10px;
-        width: 20px; /* Set a fixed width for the close button */
-        height: 20px; /* Set a fixed height for the close button */
+        overflow: hidden;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .notification-folded:hover {
+        background-color: rgba(46, 32, 65, 1); /* Fully opaque when hovered */
+    }
+
+    .notification-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .notification-expanded {
+        background-color: rgba(46, 32, 65, 1); /* Fully opaque dark purplish color */
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        display: none;
+    }
+
+    .notification-expanded.active {
+        display: block;
+    }
+
+    .notification-image {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .notification-details {
+        text-align: left;
+    }
+
+    .notification-title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .notification-text {
+        font-size: 1em;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .attachment-link {
+        color: #3498db; /* Blue text color */
+        text-decoration: underline;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .attachment-link:hover {
+        color: #2980b9; /* Darker blue on hover */
+    }
+
+    .close-button {
+        background-color: #fff;
+        color: #2e2041; /* Dark purplish color */
+        border: none;
+        padding: 8px 15px;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .close-button:hover {
+        background-color: #2e2041; /* Dark purplish color */
+        color: #fff;
     }
 </style>
 
-<div class="announcement-banner">
-    <p>Important announcement: We'll be down for maintenance soon.</p>
-    <span class="close-btn" onclick="this.parentElement.style.display='none';"></span>
-</div>
-
-
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VB2TNCW2V"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3VB2TNCW2V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -214,6 +279,51 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <script type="module" src="/src/index.tsx"></script>
+
+<!-- Notification Container -->
+<div id="notification">
+  <!-- Folded Notification -->
+  <div class="notification-folded" onclick="toggleNotification()">
+      <div class="notification-content">
+          <span class="notification-text">Click to expand notification</span>
+      </div>
+  </div>
+  <!-- Expanded Notification -->
+  <div class="notification-expanded">
+      <div class="notification-content">
+          <div class="notification-image">
+              <a href="https://example.com" target="_blank">
+                  <img src="image.jpg" alt="Notification Image">
+              </a>
+          </div>
+          <div class="notification-details">
+              <h2 class="notification-title">Notification Title</h2>
+              <p class="notification-text">Notification Text</p>
+              <div class="attachments">
+                  <p>Attachments:</p>
+                  <p>
+                      <a class="attachment-link" href="https://youtube.com" target="_blank">Screenshot</a>
+                      <!-- Add more attachments as needed -->
+                  </p>
+              </div>
+              <button class="close-button" onclick="closeNotification()">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+// Function to toggle between folded and expanded notification
+function toggleNotification() {
+  document.getElementById('notification').classList.toggle('active');
+}
+
+// Function to close the notification
+function closeNotification() {
+  document.getElementById('notification').classList.remove('active');
+}
+</script>
+
 </body>
 
 <script>
