@@ -6,20 +6,33 @@
 <head>
   <style>
     .announcement-banner {
-        background-color: #7700ff;
-        color: #333;
-        padding: 10px;
+        background-color: #9900ff;
+        color: #ffffff;
+        padding: 8px 16px; /* Adjust padding as needed */
         text-align: center;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 1000; /* Ensures it's above other content */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a shadow for depth */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .announcement-banner p {
+        margin: 0;
+    }
+    .close-btn {
+        cursor: pointer;
+        padding: 8px;
+        margin-left: 10px;
     }
 </style>
 
 <div class="announcement-banner">
-  <p>Important announcement: Site is updating soon!</p>
+  <p>Important announcement: We'll be down for maintenance soon.</p>
+  <span class="close-btn" onclick="this.parentElement.style.display='none';">X</span>
 </div>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VB2TNCW2V"></script>
