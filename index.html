@@ -17,8 +17,9 @@
         z-index: 1000; /* Ensures it's above other content */
         box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a shadow for depth */
         display: flex;
-        justify-content: space-between;
+        justify-content: center; /* Centers content horizontally */
         align-items: center;
+        height: 50px; /* Adjust the height to make it thinner */
     }
     .announcement-banner p {
         margin: 0;
@@ -31,9 +32,10 @@
 </style>
 
 <div class="announcement-banner">
-  <p>Important announcement: We'll be down for maintenance soon.</p>
-  <span class="close-btn" onclick="this.parentElement.style.display='none';">X</span>
+    <p>Important announcement: We'll be down for maintenance soon.</p>
+    <span class="close-btn" onclick="this.parentElement.style.display='none';">X</span>
 </div>
+
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VB2TNCW2V"></script>
   <script>
