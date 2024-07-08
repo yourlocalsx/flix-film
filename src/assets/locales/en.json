@@ -132,7 +132,8 @@
       "placeholder": {
         "default": "What do you want to watch?",
         "extra": [
-          "Happy Pride Month! 🏳️‍🌈"
+          "Search for media..",
+          "Anything you'd like to watch?"
         ]
       },
       "empty": {
