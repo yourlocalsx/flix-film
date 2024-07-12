@@ -106,7 +106,7 @@ export function conf(): RuntimeConfig {
     ),
     ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK: getKey(
       "ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK",
-      "https://github.com/Joeytjuhh/browser-ext/releases",
+      "https://addons.mozilla.org/en-US/firefox/addon/movie-web-extension/",
     ),
     ONBOARDING_PROXY_INSTALL_LINK: getKey("ONBOARDING_PROXY_INSTALL_LINK"),
     BACKEND_URL: getKey("BACKEND_URL", BACKEND_URL),
