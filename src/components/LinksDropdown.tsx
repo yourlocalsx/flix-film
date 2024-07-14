@@ -148,8 +148,7 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
           </DropdownLink>
           <DropdownLink
             href="https://shop.flixfilm.fun/contact"
-            icon={Icons.SUPPORT}
->
+            icon={Icons.SUPPORT}>
             {t("navigation.menu.support")}
           </DropdownLink>
           <DropdownLink href="/discover" icon={Icons.RISING_STAR}>
