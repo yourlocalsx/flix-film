@@ -150,11 +150,11 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
             {t("navigation.menu.discover")}
           </DropdownLink>
           {deviceName ? (
-          <DropdownLink
+            <DropdownLink
               className="!text-type-danger opacity-75 hover:opacity-100"
-             icon={Icons.LOGOUT}
-             onClick={logout}
->
+              icon={Icons.LOGOUT}
+              onClick={logout}
+            >
               {t("navigation.menu.logout")}
             </DropdownLink>
           ) : null}
