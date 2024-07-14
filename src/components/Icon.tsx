@@ -69,6 +69,7 @@ export enum Icons {
   UPLOAD = "upload",
   WEB = "web",
   DONATE = "donate",
+  SUPPORT = "support",
 }
 
 export interface IconProps {
@@ -155,6 +156,7 @@ const iconList: Record<Icons, string> = {
   <path d="1.6103 13.323C1.64665 13.3277 1.67628 13.3327 1.68611 13.3349C1.69472 13.337 1.70821 13.3406 1.7131 13.3419L1.72391 13.345L1.72973 13.3468L1.73585 13.3487L1.74098 13.3503C1.7381 13.3494 1.67976 13.3348 1.6103 13.323Z" fill="currentColor"/>
   </svg>`,
   donate: `<svg width="1em" height="1em" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="a"><path d="M0 0h32v32H0z"/></clipPath></defs><g data-name="Group 2537" clip-path="url(#a)"><g data-name="Group 2520"><g data-name="Group 2519"><g data-name="Group 2518"><g data-name="Group 2517"><g data-name="Group 2516"><g data-name="Group 2515"><g data-name="Group 2514"><g data-name="Group 2513"><path data-name="Path 3885" d="M28.6 4.583H9.979a1 1 0 0 0-1-1H3.4a1 1 0 1 0 0 2h2.31a1 1 0 0 0-.011.126l1.274 10.052a3.57 3.57 0 0 0-.74 2.177 3.65 3.65 0 0 0 3.646 3.645h18.33a1 1 0 1 0 0-2H9.875a1.64 1.64 0 0 1-1.433-.852l20.3-2.76a1 1 0 0 0 .865-.992v-9.4a1 1 0 0 0-1.007-.996m-1 9.523L9.09 16.623 7.818 6.583H27.6Z" fill="currentColor"/></g></g></g></g></g></g></g></g><g data-name="Group 2528"><g data-name="Group 2527"><g data-name="Group 2526"><g data-name="Group 2525"><g data-name="Group 2524"><g data-name="Group 2523"><g data-name="Group 2522"><g data-name="Group 2521"><path data-name="Path 3886" d="M10.4 22a3.208 3.208 0 1 0 3.208 3.208A3.21 3.21 0 0 0 10.4 22m0 4.417a1.208 1.208 0 1 1 1.208-1.209 1.21 1.21 0 0 1-1.208 1.209" fill="currentColor"/></g></g></g></g></g></g></g></g><g data-name="Group 2536"><g data-name="Group 2535"><g data-name="Group 2534"><g data-name="Group 2533"><g data-name="Group 2532"><g data-name="Group 2531"><g data-name="Group 2530"><g data-name="Group 2529"><path data-name="Path 3887" d="M26.4 22a3.208 3.208 0 1 0 3.208 3.208A3.21 3.21 0 0 0 26.4 22m0 4.417a1.208 1.208 0 1 1 1.208-1.209 1.21 1.21 0 0 1-1.208 1.209" fill="currentColor"/></g></g></g></g></g></g></g></g></g></svg>`,
+  support: `<svg width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 1a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13m0 12a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m1.55-8.42a1.8 1.8 0 0 0-.61-.42A2.25 2.25 0 0 0 7.53 4a2.2 2.2 0 0 0-.88.17c-.239.1-.45.254-.62.45a1.9 1.9 0 0 0-.38.62 3 3 0 0 0-.15.72h1.23a.84.84 0 0 1 .506-.741.7.7 0 0 1 .304-.049.9.9 0 0 1 .27 0 .6.6 0 0 1 .22.14.6.6 0 0 1 .16.22.7.7 0 0 1 .06.3c0 .173-.037.343-.11.5a2.4 2.4 0 0 1-.27.46l-.35.42c-.12.13-.24.27-.35.41a2.3 2.3 0 0 0-.27.45 1.2 1.2 0 0 0-.1.5v.66H8v-.49a.94.94 0 0 1 .11-.42 3 3 0 0 1 .28-.41l.36-.44a4 4 0 0 0 .36-.48 2.6 2.6 0 0 0 .28-.55 1.9 1.9 0 0 0 .11-.64 2.2 2.2 0 0 0-.1-.67 1.5 1.5 0 0 0-.35-.55M6.8 9.83h1.17V11H6.8z" fill="currentColor"/></svg>`, 
 };
 
 function ChromeCastButton() {
