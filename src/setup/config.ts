@@ -4,7 +4,7 @@ import {
   DISCORD_LINK,
   DONATE_LINK,
   GITHUB_LINK,
-  TWITTER_LINK,
+  SUPPORT_LINK,
 } from "./constants";
 
 interface Config {
@@ -13,7 +13,7 @@ interface Config {
   DISCORD_LINK: string;
   DONATE_LINK: string;
   DMCA_EMAIL: string;
-  TWITTER_LINK: string;
+  SUPPORT_LINK: string;
   TMDB_READ_API_KEY: string;
   CORS_PROXY_URL: string;
   NORMAL_ROUTER: boolean;
@@ -34,7 +34,7 @@ export interface RuntimeConfig {
   DISCORD_LINK: string;
   DONATE_LINK: string;
   DMCA_EMAIL: string | null;
-  TWITTER_LINK: string;
+  SUPPORT_LINK: string;
   TMDB_READ_API_KEY: string | null;
   NORMAL_ROUTER: boolean;
   PROXY_URLS: string[];
@@ -55,7 +55,7 @@ const env: Record<keyof Config, undefined | string> = {
   GITHUB_LINK: undefined,
   DISCORD_LINK: undefined,
   DONATE_LINK: undefined,
-  TWITTER_LINK: undefined,
+  SUPPORT_LINK: undefined,
   ONBOARDING_CHROME_EXTENSION_INSTALL_LINK:
     "https://chromewebstore.google.com/detail/nbcjlcokgigjfhejofmbaomcimggiafn",
   ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK:
@@ -98,7 +98,7 @@ export function conf(): RuntimeConfig {
     GITHUB_LINK,
     DISCORD_LINK,
     DONATE_LINK,
-    TWITTER_LINK,
+    SUPPORT_LINK,
     DMCA_EMAIL: getKey("DMCA_EMAIL"),
     ONBOARDING_CHROME_EXTENSION_INSTALL_LINK: getKey(
       "ONBOARDING_CHROME_EXTENSION_INSTALL_LINK",
