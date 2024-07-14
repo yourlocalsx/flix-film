@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { To, useNavigate } from "react-router-dom";
 
 import { base64ToBuffer, decryptData } from "@/backend/accounts/crypto";
 import { UserAvatar } from "@/components/Avatar";
@@ -146,17 +146,11 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
           <DropdownLink href={conf().DONATE_LINK} icon={Icons.DONATE}>
             {t("navigation.menu.donate")}
           </DropdownLink>
-          <DropdownLink
-            href="https://shop.flixfilm.fun/contact"
-            icon={Icons.SUPPORT}
->
-            {t("navigation.menu.support")}
-          </DropdownLink>
           <DropdownLink href="/discover" icon={Icons.RISING_STAR}>
             {t("navigation.menu.discover")}
           </DropdownLink>
           {deviceName ? (
-           <DropdownLink
+            <DropdownLink
               className="!text-type-danger opacity-75 hover:opacity-100"
               icon={Icons.LOGOUT}
               onClick={logout}
