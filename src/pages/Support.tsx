@@ -91,27 +91,17 @@ export function SupportPage() {
               bold: <span className="font-bold" style={{ color: "#cfcfcf" }} />,
             }}
           />
-          <div className="pt-6">
-            <Button
-              className="py px-4 box-content bg-buttons-secondary hover:bg-buttons-secondaryHover bg-opacity-90 text-buttons-secondaryText justify-center items-center inline-block"
-              onClick={() =>
-                window.open("https://sussy-code.github.io/docs", "_blank")
-              }
-            >
-              Sudo-Flix Docs
-            </Button>
-          </div>
         </Paragraph>
         <Ol
           items={[
             <Item title={t("support.q1.title")}>
               <Trans i18nKey="support.q1.body">
-                <MwLink to="https://discord.gg/r5cYshWM4G" />
+                <MwLink to="https://discord.gg/" />
               </Trans>
             </Item>,
             <Item title={t("support.q2.title")}>
               <Trans i18nKey="support.q2.body">
-                <MwLink to="https://github.com/sussy-code/smov" />
+                <MwLink to="https://github.com/" />
               </Trans>
             </Item>,
           ]}

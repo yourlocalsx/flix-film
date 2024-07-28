@@ -15,7 +15,7 @@
       "title": "The search results display the show or movie, why can't I play it?"
     },
     "q4": {
-      "body": "All data is synced to the flix-film-backend which is different than the community backend and is independently hosted by me, anyone is free to use this as well.",
+      "body": "Your viewing history and progress are securely synced to our flix-film-backend servers. To protect your privacy, no passwords or other sensitive data are saved.",
       "title": "What about my data and stuff?"
     },
     "q5": {

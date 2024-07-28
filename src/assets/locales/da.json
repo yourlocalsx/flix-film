@@ -15,7 +15,7 @@
         },
         "q4": {
             "title": "Hvad med mine data og andet?",
-            "body": "Alle oplysninger synkroniseres til sudo-backend, som er anderledes end community-backend og hostes selvstændigt af mig, men alle er velkomne til at bruge den."
+            "body": "Alle oplysninger synkroniseres til the -backend, som er anderledes end community-backend og hostes selvstændigt af mig, men alle er velkomne til at bruge den."
         },
         "q5": {
             "body": "flix-film har en twitter-bruger, som du kan finde i bunden af denne side, samt et link til kildekoden på Github.",
@@ -201,7 +201,7 @@
         "menu": {
             "about": "Om os",
             "logout": "Log ud",
-            "register": "Synkroniser til sudo-cloud",
+            "register": "Synkroniser til the -cloud",
             "settings": "Indstillinger",
             "support": "Support",
             "discover": "Opdag"
