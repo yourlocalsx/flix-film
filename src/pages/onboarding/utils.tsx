@@ -29,6 +29,7 @@ export function Card(props: {
 }
 
 export function CardContent(props: {
+  icon: any;
   title: ReactNode;
   description: ReactNode;
   subtitle: ReactNode;
@@ -39,7 +40,7 @@ export function CardContent(props: {
     <div className="grid grid-rows-[1fr,auto] h-full">
       <div>
         <Icon
-          icon={Icons.RISING_STAR}
+          icon={props.icon}
           className={classNames("text-4xl mb-8 block", props.colorClass)}
         />
         <Heading3

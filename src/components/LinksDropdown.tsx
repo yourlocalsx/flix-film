@@ -143,10 +143,7 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
           <DropdownLink href="/settings" icon={Icons.SETTINGS}>
             {t("navigation.menu.settings")}
           </DropdownLink>
-          <DropdownLink href={conf().DONATE_LINK} icon={Icons.DONATE}>
-            {t("navigation.menu.donate")}
-          </DropdownLink>
-          <DropdownLink href={conf().SUPPORT_LINK} icon={Icons.CIRCLE_QUESTION}>
+          <DropdownLink href="/support" icon={Icons.CIRCLE_QUESTION}>
             {t("navigation.menu.support")}
           </DropdownLink>
           <DropdownLink href="/discover" icon={Icons.RISING_STAR}>
@@ -168,7 +165,7 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
               icon={Icons.DISCORD}
             />
             <CircleDropdownLink href={conf().GITHUB_LINK} icon={Icons.GITHUB} />
-            <CircleDropdownLink href={conf().DONATE_LINK} icon={Icons.DONATE} />
+            <CircleDropdownLink href="/support" icon={Icons.CIRCLE_QUESTION} />
           </div>
         </div>
       </Transition>

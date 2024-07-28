@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { Trans, useTranslation } from "react-i18next";
 
 import { Button } from "@/components/buttons/Button";
+import { Icon, Icons } from "@/components/Icon";
 import { Stepper } from "@/components/layout/Stepper";
 import { CenterContainer } from "@/components/layout/ThinContainer";
 import { Modal, ModalCard, useModal } from "@/components/overlays/Modal";
@@ -64,6 +65,7 @@ export function OnboardingPage() {
           <Card onClick={() => navigate("/onboarding/extension")}>
             <CardContent
               colorClass="!text-onboarding-best"
+              icon={Icons.BROWSER}
               title={t("onboarding.start.options.extension.title")}
               subtitle={t("onboarding.start.options.extension.quality")}
               description={t("onboarding.start.options.extension.description")}
@@ -79,6 +81,7 @@ export function OnboardingPage() {
           <Card onClick={() => navigate("/onboarding/proxy")}>
             <CardContent
               colorClass="!text-onboarding-good"
+              icon={Icons.PROXY}
               title={t("onboarding.start.options.proxy.title")}
               subtitle={t("onboarding.start.options.proxy.quality")}
               description={t("onboarding.start.options.proxy.description")}
