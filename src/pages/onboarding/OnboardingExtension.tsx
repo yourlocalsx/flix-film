@@ -125,7 +125,6 @@ interface ExtensionPageProps {
 function ChromeExtensionPage(props: ExtensionPageProps) {
   const { t } = useTranslation();
   const installLink = conf().ONBOARDING_CHROME_EXTENSION_INSTALL_LINK;
-  const helpLink = "https://github.com/joeytjuhh/browser-ext/releases";
   return (
     <>
       <Heading2 className="!mt-0 !text-3xl max-w-[435px]">
@@ -135,16 +134,9 @@ function ChromeExtensionPage(props: ExtensionPageProps) {
         {t("onboarding.extension.explainer")}
       </Paragraph>
       {installLink ? (
-        <div>
-          <Link href={installLink} target="_blank" className="mb-4">
-            {t("onboarding.extension.linkChrome")}
-          </Link>
-          {helpLink ? (
-            <Link href={helpLink} target="_blank" className="block mt-4">
-              {t("onboarding.extension.helpChrome")}
-            </Link>
-          ) : null}
-        </div>
+        <Link href={installLink} target="_blank" className="mb-12">
+          {t("onboarding.extension.linkChrome")}
+        </Link>
       ) : null}
 
       <ExtensionStatus status={props.status} loading={props.loading} />
@@ -195,7 +187,6 @@ function UnknownExtensionPage(props: ExtensionPageProps) {
   const { t } = useTranslation();
   const installChromeLink = conf().ONBOARDING_CHROME_EXTENSION_INSTALL_LINK;
   const installFirefoxLink = conf().ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK;
-  const helpLink = "https://github.com/joeytjuhh/browser-ext/releases";
   return (
     <>
       <Heading2 className="!mt-0 !text-3xl max-w-[435px]">
@@ -204,26 +195,19 @@ function UnknownExtensionPage(props: ExtensionPageProps) {
       <Paragraph className="max-w-[320px] mb-4">
         {t("onboarding.extension.explainer")}
       </Paragraph>
-      <div className="flex flex-col items-start gap-4">
-        <div className="flex gap-4">
-          {installChromeLink ? (
-            <Link href={installChromeLink} target="_blank">
-              {t("onboarding.extension.linkChrome")}
-            </Link>
-          ) : null}
-          {installFirefoxLink ? (
-            <Link href={installFirefoxLink} target="_blank">
-              {t("onboarding.extension.linkFirefox")}
-            </Link>
-          ) : null}
-        </div>
-        <div className="mb-20">
-          {helpLink ? (
-            <Link href={helpLink} target="_blank">
-              {t("onboarding.extension.helpChrome")}
-            </Link>
-          ) : null}
-        </div>
+      <div className="mb-4">
+        {installChromeLink ? (
+          <Link href={installChromeLink} target="_blank">
+            {t("onboarding.extension.linkChrome")}
+          </Link>
+        ) : null}
+      </div>
+      <div className="mb-12">
+        {installFirefoxLink ? (
+          <Link href={installFirefoxLink} target="_blank">
+            {t("onboarding.extension.linkFirefox")}
+          </Link>
+        ) : null}
       </div>
 
       <ExtensionStatus status={props.status} loading={props.loading} showHelp />
