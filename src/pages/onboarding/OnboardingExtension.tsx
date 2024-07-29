@@ -140,7 +140,7 @@ function ChromeExtensionPage(props: ExtensionPageProps) {
             {t("onboarding.extension.linkChrome")}
           </Link>
           {helpLink ? (
-            <Link href={helpLink} target="_blank" className="mb-12">
+            <Link href={helpLink} target="_blank" className="block mt-4">
               {t("onboarding.extension.helpChrome")}
             </Link>
           ) : null}
@@ -204,26 +204,26 @@ function UnknownExtensionPage(props: ExtensionPageProps) {
       <Paragraph className="max-w-[320px] mb-4">
         {t("onboarding.extension.explainer")}
       </Paragraph>
-      <div className="mb-4">
-        {installChromeLink ? (
-          <Link href={installChromeLink} target="_blank">
-            {t("onboarding.extension.linkChrome")}
-          </Link>
-        ) : null}
-      </div>
-      <div className="mb-12">
-        {installFirefoxLink ? (
-          <Link href={installFirefoxLink} target="_blank">
-            {t("onboarding.extension.linkFirefox")}
-          </Link>
-        ) : null}
-      </div>
-      <div className="mb-20">
-        {helpLink ? (
-          <Link href={helpLink} target="_blank">
-            {t("onboarding.extension.helpChrome")}
-          </Link>
-        ) : null}
+      <div className="flex flex-col items-start gap-4">
+        <div className="flex gap-4">
+          {installChromeLink ? (
+            <Link href={installChromeLink} target="_blank">
+              {t("onboarding.extension.linkChrome")}
+            </Link>
+          ) : null}
+          {installFirefoxLink ? (
+            <Link href={installFirefoxLink} target="_blank">
+              {t("onboarding.extension.linkFirefox")}
+            </Link>
+          ) : null}
+        </div>
+        <div className="mb-20">
+          {helpLink ? (
+            <Link href={helpLink} target="_blank">
+              {t("onboarding.extension.helpChrome")}
+            </Link>
+          ) : null}
+        </div>
       </div>
 
       <ExtensionStatus status={props.status} loading={props.loading} showHelp />
