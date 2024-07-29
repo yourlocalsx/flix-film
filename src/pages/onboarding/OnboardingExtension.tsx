@@ -125,6 +125,7 @@ interface ExtensionPageProps {
 function ChromeExtensionPage(props: ExtensionPageProps) {
   const { t } = useTranslation();
   const installLink = conf().ONBOARDING_CHROME_EXTENSION_INSTALL_LINK;
+  const helpLink = "https://github.com/joeytjuhh/browser-ext/releases";
   return (
     <>
       <Heading2 className="!mt-0 !text-3xl max-w-[435px]">
@@ -136,6 +137,11 @@ function ChromeExtensionPage(props: ExtensionPageProps) {
       {installLink ? (
         <Link href={installLink} target="_blank" className="mb-12">
           {t("onboarding.extension.linkChrome")}
+        </Link>
+      ) : null}
+      {helpLink ? (
+        <Link href={helpLink} target="_blank" className="mb-12">
+          {t("onboarding.extension.helpChrome")}
         </Link>
       ) : null}
 
@@ -187,6 +193,7 @@ function UnknownExtensionPage(props: ExtensionPageProps) {
   const { t } = useTranslation();
   const installChromeLink = conf().ONBOARDING_CHROME_EXTENSION_INSTALL_LINK;
   const installFirefoxLink = conf().ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK;
+  const helpLink = "https://github.com/joeytjuhh/browser-ext/releases";
   return (
     <>
       <Heading2 className="!mt-0 !text-3xl max-w-[435px]">
@@ -206,6 +213,11 @@ function UnknownExtensionPage(props: ExtensionPageProps) {
         {installFirefoxLink ? (
           <Link href={installFirefoxLink} target="_blank">
             {t("onboarding.extension.linkFirefox")}
+          </Link>
+        ) : null}
+        {helpLink ? (
+          <Link href={helpLink} target="_blank" className="mb-12">
+            {t("onboarding.extension.helpChrome")}
           </Link>
         ) : null}
       </div>
