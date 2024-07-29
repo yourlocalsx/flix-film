@@ -469,8 +469,8 @@
       "title": "Where can I get help?"
     },
     "q2": {
-      "body": "We have a <0>GitHub</0> where you can create a detailed issue in our repository. Additionally, if you wish, you can create a pull request to fix the issue yourself.",
-      "title": "How can I report a bug or issue?"
+      "body": "To download the Chrome extension, you can go to the <0>Github</0> page and follow the video linked on the releases page.",
+      "title": "How do I download the CHROME extension?"
     }
   },
   "screens": {

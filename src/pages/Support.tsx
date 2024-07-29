@@ -99,6 +99,11 @@ export function SupportPage() {
                 <MwLink to="https://discord.gg/uk8WgKEj3q" />
               </Trans>
             </Item>,
+            <Item title={t("support.q2.title")}>
+              <Trans i18nKey="support.q2.body">
+                <MwLink to="https://github.com/browser-ext/releases" />
+              </Trans>
+            </Item>,
           ]}
         />
         <Paragraph className="flex space-x-3 items-center">
