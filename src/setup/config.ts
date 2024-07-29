@@ -57,9 +57,9 @@ const env: Record<keyof Config, undefined | string> = {
   DONATE_LINK: undefined,
   SUPPORT_LINK: undefined,
   ONBOARDING_CHROME_EXTENSION_INSTALL_LINK:
-    "https://chromewebstore.google.com/detail/nbcjlcokgigjfhejofmbaomcimggiafn",
+    import.meta.env.ONBOARDING_CHROME_EXTENSION_INSTALL_LINK,
   ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK:
-    "https://addons.mozilla.org/firefox/addon/flix-film/",
+    import.meta.env.ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK,
   ONBOARDING_PROXY_INSTALL_LINK: import.meta.env
     .VITE_ONBOARDING_PROXY_INSTALL_LINK,
   DMCA_EMAIL: import.meta.env.VITE_DMCA_EMAIL,
@@ -100,14 +100,8 @@ export function conf(): RuntimeConfig {
     DONATE_LINK,
     SUPPORT_LINK,
     DMCA_EMAIL: getKey("DMCA_EMAIL"),
-    ONBOARDING_CHROME_EXTENSION_INSTALL_LINK: getKey(
-      "ONBOARDING_CHROME_EXTENSION_INSTALL_LINK",
-      "https://github.com/Joeytjuhh/browser-ext/releases",
-    ),
-    ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK: getKey(
-      "ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK",
-      "https://addons.mozilla.org/en-US/firefox/addon/movie-web-extension/",
-    ),
+    ONBOARDING_CHROME_EXTENSION_INSTALL_LINK: getKey("ONBOARDING_CHROME_EXTENSION_INSTALL_LINK"),
+    ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK: getKey("ONBOARDING_FIREFOX_EXTENSION_INSTALL_LINK"),
     ONBOARDING_PROXY_INSTALL_LINK: getKey("ONBOARDING_PROXY_INSTALL_LINK"),
     BACKEND_URL: getKey("BACKEND_URL", BACKEND_URL),
     TMDB_READ_API_KEY: getKey("TMDB_READ_API_KEY"),
