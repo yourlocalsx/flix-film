@@ -135,14 +135,16 @@ function ChromeExtensionPage(props: ExtensionPageProps) {
         {t("onboarding.extension.explainer")}
       </Paragraph>
       {installLink ? (
-        <Link href={installLink} target="_blank" className="mb-12">
-          {t("onboarding.extension.linkChrome")}
-        </Link>
-      ) : null}
-      {helpLink ? (
-        <Link href={helpLink} target="_blank" className="mb-12">
-          {t("onboarding.extension.helpChrome")}
-        </Link>
+        <div className="flex items-center space-x-6">
+          <Link href={installLink} target="_blank" className="mb-4">
+            {t("onboarding.extension.linkChrome")}
+          </Link>
+          {helpLink ? (
+            <Link href={helpLink} target="_blank" className="mb-12">
+              {t("onboarding.extension.helpChrome")}
+            </Link>
+          ) : null}
+        </div>
       ) : null}
 
       <ExtensionStatus status={props.status} loading={props.loading} />
