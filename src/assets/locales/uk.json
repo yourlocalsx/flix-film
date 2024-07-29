@@ -28,7 +28,7 @@
             "passphrasePlaceholder": "Парольна фраза",
             "submit": "Логін",
             "title": "Увійти до свого облікового запису",
-            "validationError": "Неправильна або неповна парольна фраза"
+            "validationError": "Неправильна або неповна парольна фраза "
         },
         "register": {
             "information": {
