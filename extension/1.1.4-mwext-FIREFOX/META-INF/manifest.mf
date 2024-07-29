@@ -1,0 +1,107 @@
+Manifest-Version: 1.0
+
+Name: icon128.plasmo.96a1ede9.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: zgHP2rCBQgiHnotoEZFZFJ++K98=
+SHA256-Digest: pxHJAh5ghz0/uWxmbz4ZEsVGqPex62oLlgTu2f7Ax9o=
+
+Name: popup.19ebe02a.js
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: PEyBN40p6qqLw6tfEjJy32+0B28=
+SHA256-Digest: DGiaD+Cz7Tn8vgAnyeTnHPOQQIoziisesBgq8UCaNZA=
+
+Name: icon64.plasmo.e6259081.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: yJ2xFzZfFcsOoZnO+2f2lrSEaps=
+SHA256-Digest: iroDdEnB2AwPYGOXfIs6Hgs8IgXv5WyaqNeuMTflRF8=
+
+Name: popup.html
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: 9QwEDla43ntQGz45v9mgo8Dr6IY=
+SHA256-Digest: OMTvZO9uWHJGNm1iTW2vKWydKQhf+eJgRpqQyu6/HfY=
+
+Name: icon32.plasmo.d583dc1e.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: 6HW/Q4od6m4GdDMY5DG5CEgoVDI=
+SHA256-Digest: OASxmFXkTb0syPD4Dy8khBIKyMVhYgORpR2jq0EplBA=
+
+Name: popup.355049b2.css
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: BMf4Lle7DwuJ7kM15rxZyckKwhQ=
+SHA256-Digest: PQEFOh3dm11qNVg7UFO1OsvqfwpIYTux2z+ynfOKuys=
+
+Name: manifest.json
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: XckpJ7LaAwIRiPigqnRWNGxLYDg=
+SHA256-Digest: oZWkvV5e2MUf4e90AUgx1tZvNBoGWfYWCY0mhnrdxGE=
+
+Name: icon16.plasmo.2577fc03.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: 8JF4pDAk21N4Yt186XjRYs9MxLo=
+SHA256-Digest: mxlgw/jpFk0l6CD9mH/9yt4GSgkxjjYlrbdn3vjckhU=
+
+Name: movie-web.339b95da.js
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: w53Yr8cCwnNwsp2l/4LvUQ+fb/Y=
+SHA256-Digest: Bs0lem5i87Ns1F4BJh7IJRZ/Th7rvo8PiVWCm36fMpg=
+
+Name: icon48.plasmo.e0fcfb1d.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: ZIPunEGXs6YyzuiiC646iN/g0Tc=
+SHA256-Digest: GTJEx0ik7Y4zVykw0ohzhNrBQQcadT6/gIXP3SWDIRM=
+
+Name: static/background/index.js
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: H6nUBnLzXYliOcmJQHMmc/ggRnA=
+SHA256-Digest: H1Wz011tyWe0kho0lF7jZGDrgwzPxdz9pWseia8OrIs=
+
+Name: assets/active.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: RgY3LEV6KID0sJOC3xgzKNgRJCg=
+SHA256-Digest: zg78sIjciq8n4pYfoozIbA6SHbKYh1XbUhzrQRRmBrE=
+
+Name: assets/inactive.png
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: e5q1/bCAoL7uAX45xZ+Qv9UYVT4=
+SHA256-Digest: xXqzl9qDvbup1xwLAc0+wOoGRHD6zRKaD/yYyfDGPPs=
+
+Name: tabs/PermissionGrant.a3fd8031.js
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: dX0PSPKakHISEKjAlF+UWQy/WTY=
+SHA256-Digest: N35uuQS6c+6XZl1qQGonfbqX4b91ev+7AMaaLAfAYqE=
+
+Name: tabs/PermissionRequest.865c80bb.js
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: Lhx2w0iSvs9KuR5kqsmMi7S09ZE=
+SHA256-Digest: Md9adjYxAic0dkwFM10t/teYLS31hRfeCEWas9i9OJg=
+
+Name: tabs/PermissionRequest.html
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: ZddTwK2D1N14KKa7NEH3dKMT4rM=
+SHA256-Digest: WKl/nAHog/dnBUhpdYMuaoNHqAe9zveJlJ4pe5SVZrQ=
+
+Name: tabs/PermissionRequest.bd7b2fe2.css
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: 8T7LRiv8hCIAldINZ6e3y1WPiOs=
+SHA256-Digest: riTJ446YmqU6nXI7XVcSYrVdOhTS5Srcz+Def8IhBKg=
+
+Name: tabs/PermissionGrant.b9de9be0.css
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: weHilAYOQIlHGvPgbqq/v8eG1kQ=
+SHA256-Digest: nwlDF/Kv9qPb8WpVRjrobkp8MxcTJxr+jJ2vCoiHqRE=
+
+Name: tabs/PermissionGrant.html
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: NzlL+F8wUGNAmSxYu809E6KbXdU=
+SHA256-Digest: BM2YzVo2eYSpuUIzJq87qG+gWkdK0CbJIFWMY04w3iw=
+
+Name: META-INF/cose.manifest
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: ZnSJeZ9QI/HIVUBgrqLMero/UrY=
+SHA256-Digest: WLLKagRvZ/wn9etKJ3TRpjTPm7UOCBguAdDJKXZRrtE=
+
+Name: META-INF/cose.sig
+Digest-Algorithms: SHA1 SHA256
+SHA1-Digest: ib8sfcfJhIWe5lDL9I/8VLr7ihs=
+SHA256-Digest: HdzP7vLLumSIKF4MLK19O1dgvcchdwbTVnVSQhH8+y4=
+
