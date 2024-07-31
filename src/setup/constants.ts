@@ -1,5 +1,5 @@
 export const APP_VERSION = import.meta.env.PACKAGE_VERSION;
-export const DISCORD_LINK = "https://pages.flixfilm.fun/discord.html";
+export const DISCORD_LINK = "https://discord.flixfilm.fun";
 export const DONATE_LINK = "https://flixfilm.fun";
 export const GITHUB_LINK = "https://github.com/Joeytjuhh";
 export const SUPPORT_LINK = "https://flixfilm.fun/support";
