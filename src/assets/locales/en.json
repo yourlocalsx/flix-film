@@ -22,14 +22,14 @@
       "body": "Well flix-film has a twitter account that can be found in the footer of this page as well as a link to the source code on Github.",
       "title": "How can I find out more?"
     },
-    "title": "About flix-film (^▽^)"
+    "title": "About flix-film"
   },
   "actions": {
     "copied": "Copied",
     "copy": "Copy"
   },
   "auth": {
-    "createAccount": "Don't have an account yet 😬 <0>Create an account.</0>",
+    "createAccount": "Don't have an account yet <0>Create an account.</0>",
     "deviceNameLabel": "Device name",
     "deviceNamePlaceholder": "Personal phone",
     "generate": {
@@ -68,12 +68,12 @@
       "host": "You are connecting to <0>{{hostname}}</0> - please confirm you trust it before making an account...",
       "no": "Go back",
       "title": "Do you trust this server?",
-      "yes": "I trust this server 🤞"
+      "yes": "I trust this server"
     },
     "verify": {
       "description": "Please enter your passphrase from earlier to confirm you have saved it and to create your account",
       "invalidData": "Data is not valid",
-      "noMatch": "Passphrase doesn't match silly 😂",
+      "noMatch": "Passphrase doesn't match",
       "passphraseLabel": "Your 12-word passphrase",
       "recaptchaFailed": "ReCaptcha validation failed",
       "register": "Create account",
@@ -81,7 +81,7 @@
     }
   },
   "errors": {
-    "badge": "It broke 💀",
+    "badge": "Something broke",
     "details": "Error details",
     "reloadPage": "Reload the page",
     "showError": "Show error details",
@@ -89,7 +89,7 @@
   },
   "footer": {
     "legal": {
-      "disclaimer": "Disclaimer ◝(ᵔᵕᵔ)◜",
+      "disclaimer": "Disclaimer",
       "disclaimerText": "flix-film does not host any files itself but instead only display's content from 3rd party providers. Legal issues should be taken up with them."
     },
     "links": {
@@ -98,7 +98,7 @@
       "github": "GitHub",
       "twitter": "Twitter"
     },
-    "tagline": "Watch your favorite shows and movies for free with no ads ever! (っ'ヮ'c)"
+    "tagline": "Watch your favorite shows and movies for free without any ads!"
   },
   "global": {
     "name": "flix-film",
@@ -128,7 +128,7 @@
       "allResults": "That's all we have...",
       "failed": "Failed to find media, try again!",
       "loading": "Loading...",
-      "noResults": "We couldn't find anything :(",
+      "noResults": "We couldn't find anything",
       "placeholder": {
         "default": "What do you want to watch?",
         "extra": [
@@ -139,36 +139,28 @@
       "empty": {
         "default": "Welcome, find media to watch here!",
         "extra": [
-          "There's nothing here :(",
-          "So empty...",
-          "Such emptiness.",
-          "Hi new user :3"
+          "There's nothing here yet",
+          "You haven't seen any media yet"
         ]
       },
       "sectionTitle": "Search results",
       "discoverMore": "Discover more",
-      "discover": "Discover ✨"
+      "discover": "Discover"
     },
     "titles": {
       "day": {
         "default": "What would you like to watch this afternoon?",
-        "extra": ["Have you seen Blazing Saddles?"],
         "extra": ["Welcome to flix-film!"],
-        "extra": [" /ᐠ>ヮ<ᐟ\\ฅ"],
         "extra": ["Viva la flix-film!"]
       },
       "morning": {
         "default": "What would you like to watch this morning?",
-        "extra": ["Can't go wrong with Friends"],
         "extra": ["I hear The Expanse is popular"],
-        "extra": ["\"૮₍  ˶•⤙•˶ ₎ა"],
         "extra": ["Viva la flix-film!"]
       },
       "night": {
         "default": "What would you like to watch tonight?",
-        "extra": ["Rick & Morty is great with friends!"],
-        "extra": ["Go smoke and watch The Simpsons!"],
-        "extra": ["(づ ᴗ _ᴗ)づ♡"],
+        "extra": ["Up for a movie night?"],
         "extra": ["Viva la flix-film!"]
       },
       "420": {
@@ -191,7 +183,7 @@
   },
   "navigation": {
     "banner": {
-      "offline": "Check your internet connection, silly goose! 🦢"
+      "offline": "Check your internet connection"
     },
     "menu": {
       "donate": "Shop",
@@ -206,26 +198,26 @@
     "badge": "Not found",
     "goHome": "Back to home",
     "reloadButton": "Try again",
-    "message": "We looked everywhere: under the bins, in the closet, behind the proxy but ultimately couldn't find the page you are looking for. (ಥ﹏ಥ)",
+    "message": "We looked everywhere, but sadly we couldn't find the page you are looking for.",
     "title": "Couldn't find that page"
   },
   "downtimeNotice": {
     "badge": "Issues",
     "goHome": "Go home",
     "message": "flix-film is experiencing issues with some providers again, if you cant find or play a show please change the source. Expect this error to persist throughout the below times.",
-    "timeFrame": "<bold>March 31th 11:00 PM - 5:00 AM EST</bold>",
+    "timeFrame": "<bold>March 31th 11:00 PM - 5:00 AM UTC+2</bold>",
     "title": "Provider issues"
   },
   "onboarding": {
     "defaultConfirm": {
       "cancel": "Cancel",
       "confirm": "Use default setup",
-      "description": "The default setup does not have the best streams and can be unbearably slow. ( ͠° ͟ʖ ͡°)",
+      "description": "The default setup does not have the best streams and can be unbearably slow.",
       "title": "Are you sure?"
     },
     "extension": {
       "back": "Go back",
-      "explainer": "Using the browser extension, you can get the best streams we have to offer. With just a simple install. 👌",
+      "explainer": "Using the browser extension, you can get the best streams we have to offer. With just a simple install.",
       "explainerIos": "Unfortunately, the browser extension is not supported on iOS, Press <bold>Go back</bold> to choose another option.",
       "extensionHelp": "If you've installed the extension but it's not detected, <bold>open the extension through your browsers extension menu</bold> and follow the steps on screen.",
       "linkChrome": "Install Chrome extension",
@@ -234,7 +226,7 @@
       "notDetecting": "Installed on Chrome, but the site isn't detecting it? Try reloading the page!",
       "notDetectingAction": "Reload page",
       "status": {
-        "disallowed": "Extension is not enabled for this page (,,>﹏<,,)",
+        "disallowed": "Extension is not enabled for this page",
         "disallowedAction": "Enable extension",
         "failed": "Failed to request status",
         "loading": "Waiting for you to install the extension",
@@ -262,7 +254,7 @@
       "explainer": "To get the best streams possible, you will need to choose which streaming method you want to use.",
       "options": {
         "default": {
-          "text": "I don't want good quality streams,<0 /> <1>use the default setup ▄︻デ══━一 ʕ•͡-•ʔ</1>"
+          "text": "I don't want good quality streams,<0 /> <1>use the default setup</1>"
         },
         "extension": {
           "action": "Install extension",
@@ -277,7 +269,7 @@
           "title": "Custom proxy"
         }
       },
-      "title": "Let's get you setup with flix-film 🥳"
+      "title": "Let's get you setup with flix-film"
     }
   },
   "overlays": {
@@ -317,7 +309,7 @@
       },
       "episodes": {
         "button": "Episodes",
-        "emptyState": "There are no episodes in this season, check back later (sorry :3)...",
+        "emptyState": "There are no episodes in this season, check back later",
         "episodeBadge": "E{{episode}}",
         "loadingError": "Error loading season",
         "loadingList": "Loading...",
@@ -332,7 +324,7 @@
       "quality": {
         "automaticLabel": "Automatic quality",
         "hint": "You can try <0>switching source</0> to get different quality options.",
-        "iosNoQuality": "Due to Apple-defined (common IOS L) limitations, quality selection is not available on iOS for this source. You can try <0>switching to another source</0> to get different quality options.",
+        "iosNoQuality": "Due to Apple-defined limitations, quality selection is not available on iOS for this source. You can try <0>switching to another source</0> to get different quality options.",
         "title": "Quality"
       },
       "settings": {
@@ -348,7 +340,7 @@
       },
       "sources": {
         "failed": {
-          "text": "There was an error while trying to find any videos... Try a different source?",
+          "text": "There was an error while trying to find media on this source, try a different one.",
           "title": "Failed to scrape"
         },
         "noEmbeds": {
@@ -356,8 +348,8 @@
           "title": "No embeds found"
         },
         "noStream": {
-          "text": "This source has no streams for this movie or show. /ᐠ - ˕ -マ Ⳋ",
-          "title": "No stream :("
+          "text": "This source has no streams for this movie or show.",
+          "title": "No stream"
         },
         "title": "Sources",
         "unknownOption": "Unknown"
@@ -374,7 +366,7 @@
         },
         "title": "Subtitles",
         "unknownLanguage": "Unknown",
-        "dropSubtitleFile": "Drop subtitle file like its hot >_<",
+        "dropSubtitleFile": "Drop subtitle file",
         "scrapeButton": "Scrape subtitles",
         "empty": "There are no provided subtitles for this."
       }
@@ -386,13 +378,13 @@
       },
       "dmca": {
         "badge": "Removed",
-        "text": "This media is no longer available due to a takedown notice or copyright claim. 😨",
+        "text": "This media is no longer available due to a takedown notice or copyright claim.",
         "title": "Media has been removed"
       },
       "extensionPermission": {
         "badge": "Permission Missing",
         "button": "Use extension",
-        "text": "You have the browser extension, but we need your permission to get started using the extension. (¬_¬)",
+        "text": "You have the browser extension, but we need your permission to get started using the extension.",
         "title": "Configure the extension"
       },
       "failed": {
@@ -404,7 +396,7 @@
       "notFound": {
         "badge": "Not found",
         "homeButton": "Back to home",
-        "text": "We couldn't find the media you requested. Either it's been removed or you tampered with the URL (naughty, naughty).",
+        "text": "We couldn't find the media you requested. Either it's been removed or you tampered with the URL.",
         "title": "Couldn't find that media."
       }
     },
@@ -423,13 +415,13 @@
         "errorNotSupported": "The media or media provider object is not supported."
       },
       "homeButton": "Go home",
-      "text": "There was an error trying to play the media 😖. Please try again!",
+      "text": "There was an error trying to play the media. Please try again!",
       "title": "Failed to play video!"
     },
     "scraping": {
       "items": {
         "failure": "Error occurred",
-        "notFound": "Doesn't have the video (╥﹏╥)",
+        "notFound": "Nothing has been found",
         "pending": "Checking for videos..."
       },
       "notFound": {
@@ -457,8 +449,8 @@
     "turnstile": {
       "description": "Please prove your humanity by completing the Captcha on the right. This is to keep flix-film safe!",
       "error": "Failed to verify your humanity! Please try again.",
-      "title": "Are You a Robot 🤖?",
-      "verifyingHumanity": "Verifying your humanity... (^▽^)👍"
+      "title": "Are You a Robot?",
+      "verifyingHumanity": "Verifying your humanity..."
     }
   },
   "support": {
@@ -488,7 +480,7 @@
       "textWithReset": "Failed to load your profile from your custom server, want to reset back to the default server?"
     },
     "migration": {
-      "failed": "Failed to migrate your data. 😿",
+      "failed": "Failed to migrate your data.",
       "inProgress": "Please hold, we are migrating your data. This shouldn't take long..."
     }
   },
@@ -509,7 +501,7 @@
         "delete": {
           "button": "Delete account",
           "confirmButton": "Delete account",
-          "confirmDescription": "Are you sure you want to delete your account? All your data will be lost! ૮₍˶Ó﹏Ò ⑅₎ა",
+          "confirmDescription": "Are you sure you want to delete your account? All your data will be lost!",
           "confirmTitle": "Are you sure?",
           "text": "This action is irreversible. All data will be deleted and nothing can be recovered.",
           "title": "Delete account"
@@ -531,7 +523,7 @@
       },
       "register": {
         "cta": "Get started",
-        "text": "Share your watch progress between devices and keep them synced. ( ̧⸝⸝⍢⸝⸝)ෆ",
+        "text": "Share your watch progress between devices and keep them synced.",
         "title": "Sync to the cloud"
       },
       "title": "Account"
@@ -558,9 +550,9 @@
         "doSetup": "Do setup",
         "errorStatus": {
           "description": "It seems that one or more items in this setup need your attention.",
-          "title": "Something needs your attention 😱"
+          "title": "Something needs your attention"
         },
-        "itemError": "There is something wrong with this setting. Go through setup again to fix it. (ᴗ_ ᴗ。)",
+        "itemError": "There is something wrong with this setting. Go through setup again to fix it.",
         "items": {
           "default": "Default setup",
           "extension": "Extension",
@@ -568,7 +560,7 @@
         },
         "redoSetup": "Redo setup",
         "successStatus": {
-          "description": "All things are in place for you to start watching your favorite media. (๑>◡<๑)",
+          "description": "All things are in place for you to start watching your favorite media.",
           "title": "Everything is set up!"
         },
         "unsetStatus": {
@@ -580,7 +572,7 @@
       "workers": {
         "addButton": "Add new worker",
         "description": "To make the application function, all traffic is routed through proxies. Enable this if you want to bring your own workers. <0>Instructions.</0>",
-        "emptyState": "No workers yet (｡•́︿•̀｡), add one below",
+        "emptyState": "No workers yet, add one below",
         "label": "Use custom proxy workers",
         "urlLabel": "Worker URLs",
         "urlPlaceholder": "https://"
@@ -588,7 +580,7 @@
     },
     "preferences": {
       "language": "Application language",
-      "languageDescription": "Language applied to the entire application, only English has silly stuff 🙁.",
+      "languageDescription": "Language applied to the entire application.",
       "thumbnail": "Generate thumbnails",
       "thumbnailDescription": "Most of the time, videos don't have thumbnails. You can enable this setting to generate them on the fly but they can make your video slower.",
       "thumbnailLabel": "Generate thumbnails",
@@ -619,11 +611,11 @@
       "backgroundLabel": "Background opacity",
       "backgroundBlurLabel": "Background blur",
       "colorLabel": "Color",
-      "previewQuote": "Can I maybe have a photo of the front and back of your credit card? 👉👈🥺",
+      "previewQuote": "Can I maybe have a photo of the front and back of your credit card?",
       "textSizeLabel": "Text size",
       "title": "Subtitles",
       "textBoldLabel": "Bold text"
     },
-    "unsaved": "You have unsaved changes... ฅ^•ﻌ•^ฅ"
+    "unsaved": "You have unsaved changes..."
   }
 }
