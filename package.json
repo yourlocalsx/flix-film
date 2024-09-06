@@ -1,8 +1,8 @@
 {
-  "name": "flix-film",
+  "name": "vidbinge",
   "version": "4.9.5",
-  "private": true,
-  "homepage": "https://github.com/Joeytjuhh/flix-film",
+  "private": false,
+  "homepage": "https://github.com/VidBingeApp/VidBinge",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -97,7 +97,6 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-helmet": "^6.1.11",
-    "@types/react-lazy-load-image-component": "^1.6.4",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
     "@types/react-stickynode": "^4.0.3",
