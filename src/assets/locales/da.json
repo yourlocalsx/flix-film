@@ -29,7 +29,7 @@
         "copy": "Kopier"
     },
     "auth": {
-        "createAccount": "Du har ikke en profil endnu 😬 <0>Opret en profil.</0>",
+        "createAccount": "Du har ikke en profil endnu <0>Opret en profil.</0>",
         "deviceNameLabel": "Navn på enhed",
         "deviceNamePlaceholder": "Personlig telefon",
         "generate": {

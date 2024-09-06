@@ -46,7 +46,7 @@
       "passphrasePlaceholder": "Passphrase",
       "submit": "Login",
       "title": "Login to your account",
-      "validationError": "Incorrect or incomplete passphrase /ᐠ. .ᐟ\\"
+      "validationError": "Incorrect or incomplete passphrase"
     },
     "register": {
       "information": {

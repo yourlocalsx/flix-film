@@ -121,8 +121,10 @@
       "placeholder": {
         "default": "Wat wil je graag kijken?",
         "extra": [
-          "Waar wil je naar zoeken?",
-          "Pak wat popcorn voordat je de film start!"
+          "Wat wil je verkennen?",
+          "Wat staat er op jouw kijklijst?",
+          "Wat is jouw favoriete film?",
+          "Wat is jouw favoriete serie?"
         ]
       },
       "sectionTitle": "Zoekresultaten"

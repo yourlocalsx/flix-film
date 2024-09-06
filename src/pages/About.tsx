@@ -64,6 +64,9 @@ export function AboutPage() {
             <Question title={t("about.q4.title")}>
               {t("about.q4.body")}
             </Question>,
+            <Question title={t("about.q5.title")}>
+              {t("about.q5.body")}
+            </Question>,
           ]}
         />
         <div
@@ -75,6 +78,12 @@ export function AboutPage() {
             onClick={() => navigate("/discover")}
           >
             Discover
+          </Button>
+          <Button
+            className="py-px mt-8 box-content bg-buttons-secondary hover:bg-buttons-secondaryHover bg-opacity-90 text-buttons-secondaryText justify-center items-center"
+            onClick={() => navigate("/support")}
+          >
+            Support
           </Button>
         </div>
       </ThinContainer>

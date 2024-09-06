@@ -100,7 +100,9 @@
       "onboarding": "Mise en place",
       "pagetitle": "{{title}} - flix-film",
       "register": "Créer un compte",
-      "settings": "Paramètres"
+      "settings": "Paramètres",
+      "discover": "Découvrir",
+      "support": "Support"
     }
   },
   "home": {
