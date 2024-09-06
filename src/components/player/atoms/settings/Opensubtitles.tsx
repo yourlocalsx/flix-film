@@ -91,7 +91,6 @@ export function OpenSubtitlesCaptionView({ id }: { id: string }) {
         : (getHlsCaptionList?.() ?? []),
     [captionList, getHlsCaptionList],
   );
-
   const [searchQuery, setSearchQuery] = useState("");
   const subtitleList = useSubtitleList(captions, searchQuery);
 
