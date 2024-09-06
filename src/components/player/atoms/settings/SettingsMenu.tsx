@@ -27,21 +27,21 @@ export function SettingsMenu({ id }: { id: string }) {
   const currentSourceId = usePlayerStore((s) => s.sourceId);
   const sourceName = useMemo(() => {
     if (!currentSourceId) return "...";
-    const source = getCachedMetadata().find((src) => (src.id === currentSourceId));
-    return source?.name ?? "...";
-  }, [currentSourceId]);
+    const source = getCachedMetadata().find(
+      (src) => src.id === currentSourceId,
+    );
     return source?.name ?? "...";
   }, [currentSourceId]);
   const { toggleLastUsed } = useCaptions();
 
   const selectedLanguagePretty = selectedCaptionLanguage
-    ? getPrettyLanguageNameFromLocale(selectedCaptionLanguage) ??
-      t("player.menus.subtitles.unknownLanguage")
+    ? (getPrettyLanguageNameFromLocale(selectedCaptionLanguage) ??
+      t("player.menus.subtitles.unknownLanguage"))
     : undefined;
 
   const selectedAudioLanguagePretty = currentAudioTrack
-    ? getPrettyLanguageNameFromLocale(currentAudioTrack.language) ??
-      t("player.menus.subtitles.unknownLanguage")
+    ? (getPrettyLanguageNameFromLocale(currentAudioTrack.language) ??
+      t("player.menus.subtitles.unknownLanguage"))
     : undefined;
 
   const source = usePlayerStore((s) => s.source);
