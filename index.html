@@ -17,30 +17,18 @@
         z-index: 1000; /* Ensures it's above other content */
         box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a shadow for depth */
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         height: 35px; /* Adjust the height to make it thinner */
+        cursor: pointer; /* Changes cursor to indicate clickable area */
     }
     .announcement-banner p {
         margin: 0;
-        flex: 1; /* Take remaining space */
-    }
-    .close-btn {
-        cursor: pointer;
-        padding: 8px;
-        background-image: url('https://files.catbox.moe/exy95h.png'); /* Set background image */
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-left: 10px;
-        width: 20px; /* Set a fixed width for the close button */
-        height: 20px; /* Set a fixed height for the close button */
     }
 </style>
 
-<div class="announcement-banner">
-    <p>Maintenance sceduled for later today.</p>
-    <span class="close-btn" onclick="this.parentElement.style.display='none';"></span>
+<div class="announcement-banner" onclick="this.style.display='none';">
+    <p>Maintenance scheduled for later this week.</p>
 </div>
 
 
