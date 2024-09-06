@@ -1,6 +1,6 @@
 # Contributing Guidelines for sudo-flix
 
-Thank you for investing your time in contributing to our project! Your contribution will be reflected on all of the community hosted instances that are on the latest version.
+Thank you for investing your time in contributing to the project! Your contribution will be reflected on all of the community hosted instances that are on the latest version.
 
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 

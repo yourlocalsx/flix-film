@@ -1,7 +1,8 @@
+import classNames from "classnames";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { To, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { WideContainer } from "@/components/layout/WideContainer";
 import { useDebounce } from "@/hooks/useDebounce";
@@ -34,7 +35,26 @@ function useSearch(search: string) {
   };
 }
 
-// What the sigma?
+export function Button(props: {
+  className: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+  disabled?: boolean;
+}) {
+  return (
+    <button
+      className={classNames(
+        "font-bold rounded h-10 w-40 scale-90 hover:scale-95 transition-all duration-200",
+        props.className,
+      )}
+      type="button"
+      onClick={props.onClick}
+      disabled={props.disabled}
+    >
+      {props.children}
+    </button>
+  );
+}
 
 export function HomePage() {
   const { t } = useTranslation();
@@ -52,10 +72,11 @@ export function HomePage() {
     window.scrollTo(0, 0);
     navigate(path);
   };
+  const navigate = useNavigate();
 
   return (
     <HomeLayout showBg={showBg}>
-      <div className="mb-16 sm:mb-24">
+      <div>
         <Helmet>
           <style type="text/css">{`
             html, body {
@@ -73,21 +94,16 @@ export function HomePage() {
           <SearchListPart searchQuery={search} />
         ) : (
           <>
-            <div className="flex flex-col gap-8">
-              <BookmarksPart onItemsChange={setShowBookmarks} />
-              <WatchingPart onItemsChange={setShowWatching} />
+            <div className="flex justify-center mt-8 mb-16 sm:mb-24">
+              <Button
+                className="font-bold h-10 w-40 scale-90 hover:scale-95 transition-all duration-200 px-py p-[0.35em] mt-3 rounded-lg text-type-dimmed box-content text-[18px] bg-largeCard-background text-buttons-secondaryText justify-center items-center"
+                onClick={() => navigate("/discover")}
+              >
+                Browse
+              </Button>
             </div>
-            {!(showBookmarks || showWatching) ? (
-              <div className="flex flex-col items-center justify-center">
-                <p className="text-[18.5px] pb-3">{emptyText}</p>
-                <Button
-                  className="px-py p-[0.35em] mt-3 rounded-xl text-type-dimmed box-content text-[18px] bg-largeCard-background text-buttons-secondaryText justify-center items-center"
-                  onClick={() => handleClick("/discover")}
-                >
-                  {t("home.search.discover")}
-                </Button>
-              </div>
-            ) : null}
+            <BookmarksPart />
+            <WatchingPart />
           </>
         )}
       </WideContainer>

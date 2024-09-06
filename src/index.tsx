@@ -30,12 +30,17 @@ import { ProgressSyncer } from "@/stores/progress/ProgressSyncer";
 import { SettingsSyncer } from "@/stores/subtitles/SettingsSyncer";
 import { ThemeProvider } from "@/stores/theme";
 
+import { AdsWrapper } from "./AdsWrapper";
 import {
   extensionInfo,
   isExtensionActiveCached,
 } from "./backend/extension/messaging";
+import IframeMessage from "./components/utils/iframe";
 import { initializeChromecast } from "./setup/chromecast";
+// eslint-disable-next-line import/order
 import { initializeOldStores } from "./stores/__old/migrations";
+
+// Import the IframeMessage component
 
 // initialize
 initializeChromecast();
@@ -169,6 +174,7 @@ function ExtensionStatus() {
   }
   return null;
 }
+
 const container = document.getElementById("root");
 const root = createRoot(container!);
 
@@ -183,8 +189,11 @@ root.render(
             <BookmarkSyncer />
             <SettingsSyncer />
             <TheRouter>
-              <MigrationRunner />
+              <AdsWrapper>
+                <MigrationRunner />
+              </AdsWrapper>
             </TheRouter>
+            <IframeMessage />
           </ThemeProvider>
         </Suspense>
       </HelmetProvider>

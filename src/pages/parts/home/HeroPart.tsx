@@ -15,11 +15,14 @@ export interface HeroPartProps {
   searchParams: ReturnType<typeof useSearchQuery>;
 }
 
-function getTimeOfDay(date: Date): "night" | "morning" | "day" | "420" | "69" {
+function getTimeOfDay(
+  date: Date,
+): "night" | "morning" | "day" | "420" | "halloween" {
   const month = date.getMonth() + 1;
   const day = date.getDate();
-  if (month === 4 && day === 20) return "420";
-  if (month === 6 && day === 9) return "69";
+  if (month === 4 && day === 20) return "420"; // Adding the check for 4/20
+  if (month === 10 && day === 31) return "halloween"; // Adding the check for Halloween
+
   const hour = date.getHours();
   if (hour < 5) return "night";
   if (hour < 12) return "morning";
@@ -64,7 +67,9 @@ export function HeroPart({ setIsSticky, searchParams }: HeroPartProps) {
     <ThinContainer>
       <div className="mt-44 space-y-16 text-center">
         <div className="relative z-10 mb-16">
-          <HeroTitle className="mx-auto max-w-md">{title}</HeroTitle>
+          <HeroTitle className="mx-auto text-pretty max-w-md">
+            {title}
+          </HeroTitle>
         </div>
         <div className="relative h-20 z-30">
           <Sticky

@@ -22,6 +22,7 @@ export function CaptionOption(props: {
   loading?: boolean;
   onClick?: () => void;
   error?: React.ReactNode;
+  chevron?: boolean;
 }) {
   return (
     <SelectableLink
@@ -29,6 +30,7 @@ export function CaptionOption(props: {
       loading={props.loading}
       error={props.error}
       onClick={props.onClick}
+      chevron={props.chevron}
     >
       <span
         data-active-link={props.selected ? true : undefined}
@@ -82,13 +84,36 @@ export function CustomCaptionOption() {
   );
 }
 
-export function CaptionsView({
-  id,
-  backLink,
-}: {
-  id: string;
-  backLink?: true;
-}) {
+function useSubtitleList(subs: CaptionListItem[], searchQuery: string) {
+  const { t: translate } = useTranslation();
+  const unknownChoice = translate("player.menus.subtitles.unknownLanguage");
+  return useMemo(() => {
+    const input = subs
+      .map((t) => ({
+        ...t,
+        languageName:
+          getPrettyLanguageNameFromLocale(t.language) ?? unknownChoice,
+      }))
+      .filter((x) => !x.opensubtitles);
+    const sorted = sortLangCodes(input.map((t) => t.language));
+    let results = input.sort((a, b) => {
+      return sorted.indexOf(a.language) - sorted.indexOf(b.language);
+    });
+
+    if (searchQuery.trim().length > 0) {
+      const fuse = new Fuse(input, {
+        includeScore: true,
+        keys: ["languageName"],
+      });
+
+      results = fuse.search(searchQuery).map((res) => res.item);
+    }
+
+    return results;
+  }, [subs, searchQuery, unknownChoice]);
+}
+
+export function CaptionsView({ id }: { id: string }) {
   const { t } = useTranslation();
   const router = useOverlayRouter(id);
   const selectedCaptionId = usePlayerStore((s) => s.caption.selected?.id);
@@ -125,6 +150,43 @@ export function CaptionsView({
     reader.readAsText(firstFile);
   }
 
+  const captions = useMemo(
+    () =>
+      captionList.length !== 0 ? captionList : (getHlsCaptionList?.() ?? []),
+    [captionList, getHlsCaptionList],
+  );
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const subtitleList = useSubtitleList(captions, searchQuery);
+
+  const [downloadReq, startDownload] = useAsyncFn(
+    async (captionId: string) => {
+      setCurrentlyDownloading(captionId);
+      return selectCaptionById(captionId);
+    },
+    [selectCaptionById, setCurrentlyDownloading],
+  );
+
+  const content = subtitleList.map((v) => {
+    return (
+      <CaptionOption
+        // key must use index to prevent url collisions
+        key={v.id}
+        countryCode={v.language}
+        selected={v.id === selectedCaptionId}
+        loading={v.id === currentlyDownloading && downloadReq.loading}
+        error={
+          v.id === currentlyDownloading && downloadReq.error
+            ? downloadReq.error.toString()
+            : undefined
+        }
+        onClick={() => startDownload(v.id)}
+      >
+        {v.languageName}
+      </CaptionOption>
+    );
+  });
+
   const selectedLanguagePretty = selectedCaptionLanguage
     ? (getPrettyLanguageNameFromLocale(selectedCaptionLanguage) ??
       t("player.menus.subtitles.unknownLanguage"))
@@ -147,36 +209,20 @@ export function CaptionsView({
           </div>
         </div>
 
-        {backLink ? (
-          <Menu.BackLink
-            onClick={() => router.navigate("/")}
-            rightSide={
-              <button
-                type="button"
-                onClick={() => router.navigate("/captions/settings")}
-                className="-mr-2 -my-1 px-2 p-[0.4em] rounded tabbable hover:bg-video-context-light hover:bg-opacity-10"
-              >
-                {t("player.menus.subtitles.customizeLabel")}
-              </button>
-            }
-          >
-            {t("player.menus.subtitles.title")}
-          </Menu.BackLink>
-        ) : (
-          <Menu.Title
-            rightSide={
-              <button
-                type="button"
-                onClick={() => router.navigate("/captions/settingsOverlay")}
-                className="-mr-2 -my-1 px-2 p-[0.4em] rounded tabbable hover:bg-video-context-light hover:bg-opacity-10"
-              >
-                {t("player.menus.subtitles.customizeLabel")}
-              </button>
-            }
-          >
-            {t("player.menus.subtitles.title")}
-          </Menu.Title>
-        )}
+        <Menu.BackLink
+          onClick={() => router.navigate("/")}
+          rightSide={
+            <button
+              type="button"
+              onClick={() => router.navigate("/captions/settings")}
+              className="-mr-2 -my-1 px-2 p-[0.4em] rounded tabbable hover:bg-video-context-light hover:bg-opacity-10"
+            >
+              {t("player.menus.subtitles.customizeLabel")}
+            </button>
+          }
+        >
+          {t("player.menus.subtitles.title")}
+        </Menu.BackLink>
       </div>
       <FileDropHandler
         className={`transition duration-300 ${dragging ? "opacity-20" : ""}`}
@@ -194,27 +240,7 @@ export function CaptionsView({
           </CaptionOption>
           <CustomCaptionOption />
           <Menu.ChevronLink
-            onClick={() =>
-              router.navigate(
-                backLink ? "/captions/source" : "/captions/sourceOverlay",
-              )
-            }
-            rightText={
-              useSubtitleStore((s) => s.isOpenSubtitles)
-                ? ""
-                : selectedLanguagePretty
-            }
-          >
-            {t("player.menus.subtitles.SourceChoice")}
-          </Menu.ChevronLink>
-          <Menu.ChevronLink
-            onClick={() =>
-              router.navigate(
-                backLink
-                  ? "/captions/opensubtitles"
-                  : "/captions/opensubtitlesOverlay",
-              )
-            }
+            onClick={() => router.navigate("/captions/opensubtitles")}
             rightText={
               useSubtitleStore((s) => s.isOpenSubtitles)
                 ? selectedLanguagePretty
@@ -223,6 +249,7 @@ export function CaptionsView({
           >
             {t("player.menus.subtitles.OpenSubtitlesChoice")}
           </Menu.ChevronLink>
+          {content}
         </Menu.ScrollToActiveSection>
       </FileDropHandler>
     </>

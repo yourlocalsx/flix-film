@@ -3,6 +3,7 @@ import { persist } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
 
 export interface PreferencesStore {
+  enableAds: boolean;
   enableThumbnails: boolean;
   enableAutoplay: boolean;
   sourceOrder: string[];
@@ -15,7 +16,7 @@ export interface PreferencesStore {
 export const usePreferencesStore = create(
   persist(
     immer<PreferencesStore>((set) => ({
-      enableThumbnails: false,
+      enableThumbnails: true,
       enableAutoplay: true,
       sourceOrder: [],
       setEnableThumbnails(v) {
