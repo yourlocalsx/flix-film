@@ -164,7 +164,7 @@ function ParticlesCanvas() {
             sizeRange: [25, 35] as [number, number],
           },
         ];
-        imageParticleCount = particleCount
+        imageParticleCount = particleCount * 0.5
         break;
 
       default:
